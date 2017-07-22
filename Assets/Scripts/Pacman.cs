@@ -69,7 +69,7 @@ public class Pacman : MonoBehaviour {
 
 	//USADO PARA SINCRONIZAR CON EL GRID.
 	public bool alineadoEnY(){return (int) Mathf.Abs(transform.position.y)% 10 == 0;}
-	public bool alineadoEnX(){return (int)Mathf.Abs(transform.position.x)% 10 == 0;}
+	public bool alineadoEnX(){return (int) Mathf.Abs(transform.position.x)% 10 == 0;}
 
 	void Update () {
 		actualizarCoordenadas ();

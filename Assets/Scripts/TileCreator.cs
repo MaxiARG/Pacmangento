@@ -18,7 +18,7 @@ public class TileCreator : MonoBehaviour {
 		for (int Y = 0; Y <28; Y++) {
 
 			for (int X = 0; X < 36; X++) {
-				print (Y + " " + X);
+				
 				//yield return new WaitForSeconds(0.000001f);
 				if (mapa[X,Y] == 2) {
 					GameObject go = Instantiate(bloqueVioleta, new Vector2(Y * 10,-X*10), Quaternion.Euler(-90,0,0));

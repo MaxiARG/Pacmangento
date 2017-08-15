@@ -66,10 +66,17 @@ public class Pacman : MonoBehaviour {
 		if (miDireccion != DIR.neutro)
 			transform.Translate (direccion * speed *Time.deltaTime);
     }
+	public Vector3 getPacmanPosition(){
+		return new Vector3 (mXPos, mYPos, -4); //el -4 es porque es la posicion z de los enemigos
+	}
 
 	//USADO PARA SINCRONIZAR CON EL GRID.
 	public bool alineadoEnY(){return (int) Mathf.Abs(transform.position.y)% 10 == 0;}
 	public bool alineadoEnX(){return (int) Mathf.Abs(transform.position.x)% 10 == 0;}
+
+
+
+
 
 	void Update () {
 		actualizarCoordenadas ();
